@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FLY CHUNGWOON</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="screen">
+
+        <!-- 상단 -->
+        <header class="top-bar">
+
+            <div class="airline">
+                <div class="plane-logo">✈</div>
+                <div>
+                    <div class="airline-name">FLY CHUNGWOON</div>
+                    <div class="airline-sub">IN-FLIGHT ENTERTAINMENT</div>
+                </div>
+            </div>
+
+            <div class="flight-route">
+                <span>ICN</span>
+                <span class="arrow">→</span>
+                <span>DXB</span>
+            </div>
+
+            <div class="clock" id="clock">
+                00:00:00
+            </div>
+
+        </header>
+
+
+        <!-- 메인 화면 -->
+        <main id="homeScreen">
+
+            <div class="welcome">
+
+                <div class="welcome-small">
+                    WELCOME ABOARD
+                </div>
+
+                <h1>
+                    FLY CHUNGWOON
+                </h1>
+
+                <p>
+                    즐거운 여행 되시길 바랍니다.
+                </p>
+
+                <div class="route-card">
+                    INCHEON
+                    <span>✈</span>
+                    DUBAI
+                </div>
+
+            </div>
+
+
+            <!-- 메뉴 -->
+            <div class="menu">
+
+                <button onclick="openMovies()">
+                    <div class="menu-icon">🎬</div>
+                    <div>영화</div>
+                </button>
+
+                <button onclick="openFlight()">
+                    <div class="menu-icon">✈️</div>
+                    <div>비행정보</div>
+                </button>
+
+                <button onclick="openCrew()">
+                    <div class="menu-icon">🔔</div>
+                    <div>승무원 호출</div>
+                </button>
+
+                <button onclick="openMusic()">
+                    <div class="menu-icon">🎵</div>
+                    <div>음악</div>
+                </button>
+
+                <button onclick="openMeals()">
+                    <div class="menu-icon">🍽️</div>
+                    <div>기내식</div>
+                </button>
+
+                <button onclick="openSettings()">
+                    <div class="menu-icon">⚙️</div>
+                    <div>설정</div>
+                </button>
+
+            </div>
+
+        </main>
+
+
+        <!-- 새로운 화면 -->
+        <div id="page" class="page hidden">
+
+            <div class="page-header">
+
+                <button class="back-button" onclick="goHome()">
+                    ←
+                </button>
+
+                <h2 id="pageTitle">
+                    메뉴
+                </h2>
+
+            </div>
+
+            <div id="pageContent" class="page-content"></div>
+
+        </div>
+
+
+        <!-- 알림 -->
+        <div id="notification" class="notification">
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
